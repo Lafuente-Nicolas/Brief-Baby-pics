@@ -1,7 +1,9 @@
 
 @use './abstracts/functions';
 @use './abstracts/mixins';
-@use './abstracts/variables';
+@use 'abstracts/variables' as *;
+
+
 
 @use './base/reset';
 @use './base/typography';
