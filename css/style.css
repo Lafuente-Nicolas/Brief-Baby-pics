@@ -1,12 +1,17 @@
 .main-nav {
   background-color: #FFF8F1;
   padding: 1em 0;
+  grid-area: nav;
+  padding: 1em 0;
+  margin: 1em auto;
+  max-width: 90%;
+  padding: 1em 0;
 }
 .main-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 3.5em;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -14,12 +19,12 @@
 }
 .main-nav a {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 400;
   color: #4A4A4A;
   text-decoration: none;
   position: relative;
-  padding: 0.25em 0;
+  padding: 0.5em 1em;
 }
 .main-nav a::after {
   content: "";
@@ -49,31 +54,22 @@
 
 .site-header {
   display: grid;
-  grid-template-columns: 1fr; /* Une seule colonne pour toute la largeur */
-  grid-template-rows: auto 1fr auto; /* Trois lignes : logo, titre, navigation */
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
   grid-template-areas: "logo" "title" "nav";
   align-items: center;
-  justify-items: center;
-  padding: 2em 1em;
+  justify-items: space-between;
+  padding: 0.1em 0.1em;
   background-color: #FFF8F1;
 }
 
 .logo {
   grid-area: logo;
+  justify-self: center;
 }
 .logo img {
-  max-width: 1.5em; /* Ajuste la taille du logo */
+  max-width: 10em;
   height: auto;
-}
-
-.site-title {
-  grid-area: title;
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #F4C6C8;
-  text-align: center;
-  margin: 1em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
