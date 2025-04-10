@@ -1,32 +1,23 @@
 .site-header {
   display: grid;
-  grid-template-columns: 1fr; /* Une seule colonne pour toute la largeur */
-  grid-template-rows: auto 1fr auto; /* Trois lignes : logo, titre, navigation */
+  grid-template-columns: auto; 
+  grid-template-rows: 1fr; 
   grid-template-areas: 
     "logo"
     "title"
     "nav";
   align-items: center;
-  justify-items: center;
-  padding: 2em 1em;
+  justify-items: space-between;
+  padding: 0.10em 0.10em;
   background-color: #FFF8F1; 
 }
 
 .logo {
   grid-area: logo;
+  justify-self: center;
   img {
-    max-width: 1.5em; /* Ajuste la taille du logo */
+    max-width: 10em; 
     height: auto;
   }
-}
-
-.site-title {
-  grid-area: title;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2.5em; 
-  font-weight: 700; 
-  color: #F4C6C8; 
-  text-align: center;
-  margin: 1em 0;
 }
 

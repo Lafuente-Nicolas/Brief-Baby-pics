@@ -1,12 +1,18 @@
 .main-nav {
     background-color: #FFF8F1; 
     padding: 1em 0;
+    grid-area: nav;
+    padding: 1em 0;
+    margin: 1em auto;
+    max-width: 90%; 
+    padding: 1em 0;
+
   
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2em;
+      gap: 3.5em;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -15,14 +21,13 @@
   
     a {
       font-family:  'Quicksand', sans-serif;
-      font-size: 1.125em;
+      font-size: 1.25em;
       font-weight: 400;
       color: #4A4A4A; 
       text-decoration: none;
       position: relative;
-      padding: 0.25em 0;
-  
-      // Effet souligné doré au hover
+      padding: 0.5em 1em;
+
       &::after {
         content: "";
         position: absolute;
@@ -46,4 +51,4 @@
     }
   }
   
-  
+ 
