@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+
+
+footer {
+    background-color: $secondary-color;
+    padding: 3em 1.5em;
+    text-align: center;
+  
+    h2 {
+      font-family: $font-title;
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+  
+    p, address, a {
+      font-family: $font-body;
+      color: $text-color;
+      text-decoration: none;
+  
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  
+    .social-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+  
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+  
+        a {
+          font-size: 1.5rem;
+          color: $text-color;
+  
+          i {
+            margin-right: 0.3rem;
+          }
+  
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  
+    section {
+      font-size: 0.9rem;
+      margin-top: 2em;
+      color: $text-color;
+    }
+  }
+  
