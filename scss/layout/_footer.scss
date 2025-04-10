@@ -5,14 +5,14 @@ footer {
   padding: 3em 1.5em;
   text-align: center;
 
-  // Styles pour les titres dans le footer
+  
   h2 {
     font-family: $font-title;
     font-size: 1.5rem;
     color: $primary-color;
   }
 
-  // Styliser le texte des paragraphes, adresse, etc.
+  
   p, address {
     font-family: $font-body;
     color: $text-color;
@@ -21,10 +21,10 @@ footer {
 
   // Ne pas surligner le texte des paragraphes au survol
   p:hover, address:hover {
-    color: $text-color; // Aucune modification de couleur au survol
+    color: $text-color; 
   }
 
-  // Liens sociaux spécifiques
+ 
   .social-links {
     list-style: none;
     padding: 0;
@@ -68,9 +68,15 @@ footer {
     }
   }
 
-  // Copyright et autres paragraphes en bas
+  
   p {
     font-size: 0.9rem;
     color: $text-color;
   }
 }
+ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;            
+    margin: 0;             
+  }
+  
