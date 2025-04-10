@@ -15,14 +15,14 @@
 .logo {
   grid-area: logo;
   img {
-    max-width: 1,5em; /* Ajuste la taille du logo */
+    max-width: 1.5em; /* Ajuste la taille du logo */
     height: auto;
   }
 }
 
 .site-title {
   grid-area: title;
-  font-family: $font-title; 
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.5em; 
   font-weight: 700; 
   color: #F4C6C8; 
