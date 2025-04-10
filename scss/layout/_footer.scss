@@ -56,6 +56,18 @@ footer {
     }
   }
 
+  // Appliquer le survol pour les liens mail et téléphone
+  address a {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    // Effet de survol pour les liens de contact
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
   // Copyright et autres paragraphes en bas
   p {
     font-size: 0.9rem;
