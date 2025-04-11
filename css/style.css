@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 footer {
   background-color: #D6E3D3;
   padding: 3em 1.5em;
-  text-align: center;
 }
 footer h2 {
   font-family: "Quicksand", sans-serif;
@@ -104,7 +103,7 @@ footer .social-links li a {
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   transition: color 0.3s ease;
 }
 footer .social-links li a i {
@@ -131,6 +130,16 @@ ul {
   list-style-type: none; /* Enlève les puces */
   padding: 0;
   margin: 0;
+}
+
+.center-container {
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.center-container p {
+  text-align: center; /* Assure que le texte est centré si la largeur du conteneur est plus grande que le texte */
 }
 
 .site-header {
@@ -198,6 +207,24 @@ ul {
 }
 .main-nav a:hover {
   color: #F4C6C8;
+}
+
+.gallery {
+  background-color: #FFF8F1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  justify-items: center; /* Centre les images horizontalement */
+  align-items: center; /* Centre les images verticalement */
+  /* Image prenant 2 colonnes */
+  background-color: #FFF8F1;
+}
+.gallery img {
+  width: 100%; /* Les images prennent toute la largeur de la cellule */
+  height: 100%;
+  border-radius: 8px; /* Coins arrondis */
+}
+.gallery .image-large {
+  grid-column: span 2; /* Cette image prendra 2 colonnes */
 }
 
 /*# sourceMappingURL=style.css.map */
