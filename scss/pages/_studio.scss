@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.studio-photos {
+    h2 {
+        @include title(2.25em, 600, #F4C6C8); 
+        text-align: center; 
+    }
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr;
+    gap: 16px; 
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    @include body-text(1.125em, 400, #4A4A4A);
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      
+    }
+  }
+  
