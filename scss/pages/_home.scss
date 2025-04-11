@@ -1,0 +1,66 @@
+// _home.scss
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+    h1 {
+        @include title(2.25em, 600, #F4C6C8); 
+        text-align: center; 
+    }
+
+    h2 {
+        @include title(2.25em, 600, #F4C6C8); 
+        text-align: center; 
+    }
+
+.paragraph {
+    text-align: center; 
+    @include body-text(1.25em, 400, #4A4A4A); 
+}
+.main {
+    background-color: $background-color;
+}
+
+.avis-list {
+    
+    padding: 4rem 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+  
+    blockquote {
+      background-color: $secondary-color;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      position: relative;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+  
+      p {
+        @include body-text(1.125em, 400, $text-color);
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+  
+      address {
+        font-style: normal;
+        font-weight: 600;
+        color: $accent-color;
+  
+        cite {
+          font-style: normal;
+        }
+      }
+  
+      &::before {
+        content: "❝";
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-size: 3rem;
+        color: $accent-color;
+      }
+    }
+  }
