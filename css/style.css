@@ -9,13 +9,13 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
-  color: #F4C6C8;
+  color: #DFAE9C;
   margin-bottom: 0.5em;
 }
 
 .accent {
   font-family: "Sacramento", cursive;
-  color: #F4C6C8;
+  color: #DFAE9C;
 }
 
 .main-nav {
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleX(1);
 }
 .main-nav a:hover {
-  color: #F4C6C8;
+  color: #DFAE9C;
 }
 
 .container {
@@ -80,7 +80,7 @@ footer {
 footer h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
-  color: #F4C6C8;
+  color: #DFAE9C;
 }
 footer p, footer address {
   font-family: "Nunito", sans-serif;
