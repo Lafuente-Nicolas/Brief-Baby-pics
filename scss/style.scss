@@ -1,6 +1,6 @@
 
 @use './abstracts/functions';
-@use './abstracts/mixins';
+@use './abstracts/mixins' as *;
 @use 'abstracts/variables' as *;
 
 
@@ -17,6 +17,7 @@
 @use './layout/grid';
 @use './layout/header';  
 @use './layout/sidebar';
+@use './layout/gallery';
 
 @use './pages/about';
 @use './pages/contact';

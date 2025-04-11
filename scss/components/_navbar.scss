@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .main-nav {
     background-color: #FFF8F1; 
     padding: 1em 0;
@@ -46,7 +48,7 @@
       }
   
       &:hover {
-        color: #F4C6C8; 
+        color: $primary-color; 
       }
     }
   }

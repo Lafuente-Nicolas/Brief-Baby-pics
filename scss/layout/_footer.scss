@@ -1,9 +1,8 @@
 @use '../abstracts/variables' as *;
 
-footer {
+footer{
   background-color: $secondary-color;
   padding: 3em 1.5em;
-  text-align: center;
 
   
   h2 {
@@ -40,7 +39,7 @@ footer {
         text-decoration: none;
         font-size: 1.5rem;
         display: inline-flex;
-        align-items: center;
+        align-items: flex-start;
         transition: color 0.3s ease;
 
         i {
@@ -78,5 +77,16 @@ ul {
     list-style-type: none; /* Enlève les puces */
     padding: 0;            
     margin: 0;             
+  }
+
+  .center-container {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+  
+  }
+  
+  .center-container p {
+    text-align: center; /* Assure que le texte est centré si la largeur du conteneur est plus grande que le texte */
   }
   
