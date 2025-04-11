@@ -1,3 +1,4 @@
+@use '../abstracts/variables' as *;
 // Titre principal (h1, h2, etc.)
 @mixin title($size: 2.25em, $weight: 600, $color: #F4C6C8) {
   font-family: $font-title;
@@ -18,11 +19,12 @@
 
 // Texte de paragraphe
 @mixin body-text($size: 1.125em, $weight: 400, $color: #4A4A4A) {
-  font-family: $text-color;
+  font-family: $font-body;
   font-size: $size;
   font-weight: $weight; 
   color: $color; 
   line-height: 1.6; 
 }
+
 
 
