@@ -227,4 +227,78 @@ ul {
   grid-column: span 2; /* Cette image prendra 2 colonnes */
 }
 
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #F4C6C8;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #F4C6C8;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+.main {
+  background-color: #FFF8F1;
+}
+
+.avis-list {
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+}
+.avis-list blockquote {
+  background-color: #D6E3D3;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.avis-list blockquote p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #4A4A4A;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.avis-list blockquote address {
+  font-style: normal;
+  font-weight: 600;
+  color: #E6C79C;
+}
+.avis-list blockquote address cite {
+  font-style: normal;
+}
+.avis-list blockquote::before {
+  content: "❝";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 3rem;
+  color: #E6C79C;
+}
+
 /*# sourceMappingURL=style.css.map */
