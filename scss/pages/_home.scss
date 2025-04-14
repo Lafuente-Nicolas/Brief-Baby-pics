@@ -5,11 +5,13 @@
     h1 {
         @include title(2.25em, 600, #F4C6C8); 
         text-align: center; 
+        background-color: $background-color;
     }
 
     h2 {
         @include title(2.25em, 600, #F4C6C8); 
         text-align: center; 
+        background-color: $background-color;
     }
 
 .paragraph {
@@ -19,9 +21,10 @@
 .main {
     background-color: $background-color;
 }
-
 .avis-list {
-    
+
+    @include body-text(1.125em, 400, #4A4A4A);
+    background-color: $background-color;
     padding: 4rem 2rem;
     display: grid;
     gap: 2rem;

@@ -1,10 +1,11 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-.studio-photos {
+.photo-grid {
     h2 {
         @include title(2.25em, 600, #F4C6C8); 
         text-align: center; 
+        background-color: $background-color;
     }
     background-color: $background-color;
     display: grid;
@@ -15,12 +16,12 @@
     justify-items: center;
     align-items: center;
     @include body-text(1.125em, 400, #4A4A4A);
+    background-color: $background-color;
   
     img {
       width: 100%;
       height: auto;
       border-radius: 8px;
-      
     }
   }
   
