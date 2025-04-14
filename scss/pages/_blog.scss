@@ -1,0 +1,86 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.blogue {
+    padding: 4vh 5vw;
+    background-color: $background-color; // Fond principal crème
+    color: $text-color; // Texte en gris anthracite
+  
+    h2 {
+      @include title(2.5em, 600, $primary-color);
+      text-align: center;
+      margin-bottom: 2em;  // Augmenter l'espace sous le titre
+    }
+  
+    .intro {
+      font-size: 1.125em;
+      text-align: center;
+      margin-bottom: 2em;
+      max-width: 700px;
+      margin-inline: auto;
+      font-family: $font-body;
+    }
+  
+    .grille-articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5em; // Augmenter l'espace entre les articles
+    }
+  
+    article {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 1rem;
+      padding: 2em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 3em; // Augmenter l'espace entre chaque article
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      /* Masquer la case à cocher */
+      .toggle {
+        display: none;
+      }
+  
+      label {
+        display: block;
+        cursor: pointer; /* Le label est cliquable */
+      }
+  
+      h4, h3 {
+        font-size: 1.25em;
+        margin-bottom: 0.75em;
+        font-weight: 600;
+        font-family: $font-title;
+        color: $primary-color;
+      }
+  
+      p {
+        font-size: 1em;
+        font-family: $font-body;
+        line-height: 1.6;
+      }
+  
+      .content {
+        display: none; /* Cache le contenu par défaut */
+        margin-top: 1.5em; /* Plus d'espace avant le contenu caché */
+      }
+  
+      /* Lorsque la case à cocher est activée, on affiche le contenu */
+      .toggle:checked + label + .content {
+        display: block; /* Affiche le contenu quand la case est cochée */
+      }
+  
+      .etiquette {
+        margin-top: 1.5em;
+        font-size: 0.85em;
+        font-style: italic;
+        color: $accent-color;
+      }
+    }
+  }
+  
