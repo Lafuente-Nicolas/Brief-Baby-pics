@@ -3,13 +3,13 @@
 @use '../abstracts/mixins' as *;
 
     h1 {
-        @include title(2.25em, 600, #F4C6C8); 
+        @include title(2.25em, 600, #DFAE9C); 
         text-align: center; 
         background-color: $background-color;
     }
 
     h2 {
-        @include title(2.25em, 600, #F4C6C8); 
+        @include title(2.25em, 600, #DFAE9C); 
         text-align: center; 
         background-color: $background-color;
     }
