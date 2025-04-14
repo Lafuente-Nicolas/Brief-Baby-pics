@@ -1,2 +1,91 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+
+.tarifs {
+    // Fond général de la section et padding autour
+    background-color: $background-color;
+    padding: 4vw;
+    text-align: center;
+  
+  
+    h2 {
+      @include title(2.25rem, 600, #F4C6C8);
+      margin-bottom: 1.5rem;
+    }
+  
+   
+    .intro,
+    .conclusion {
+      @include body-text(1.125rem, 400, $text-color);
+      max-width: 60ch; 
+      margin: 0 auto 2rem;
+    }
+  
+    // Conteneur des cartes tarifs → layout responsive avec grid
+    .tarif-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem; 
+      margin-bottom: 2rem;
+    }
+  
+    // Style de chaque carte individuelle
+    .tarif-card {
+      background-color: $secondary-color; 
+      padding: 2rem;
+      border-radius: 1.5rem; 
+      box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.05); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; // Animation 
+  
+      // Effet hover pour la carte (lévitation légère)
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+      }
+  
+      
+      h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          @include body-text(1rem, 400, $text-color);
+          margin-bottom: 0.75rem;
+  
+          strong {
+            font-weight: 600;
+            color: $text-color;
+          }
+        }
+      }
+    }
+  
+    // Responsive design (écrans ≤ 768px)
+    @media (max-width: 768px) {
+      padding: 6vw;
+  
+      h2 {
+        font-size: 2rem;
+      }
+  
+      .tarif-card {
+        padding: 1.5rem;
+  
+        h3 {
+          font-size: 1.25rem;
+        }
+  
+        ul li {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+  
