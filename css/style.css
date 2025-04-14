@@ -526,4 +526,79 @@ h2 {
   }
 }
 
+.blogue {
+  padding: 4vh 5vw;
+  background-color: #FFF8F1;
+  color: #4A4A4A;
+}
+.blogue h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #DFAE9C;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.blogue .intro {
+  font-size: 1.125em;
+  text-align: center;
+  margin-bottom: 2em;
+  max-width: 700px;
+  margin-inline: auto;
+  font-family: "Nunito", sans-serif;
+}
+.blogue .grille-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5em;
+}
+.blogue article {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  padding: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 3em;
+  /* Masquer la case à cocher */
+  /* Lorsque la case à cocher est activée, on affiche le contenu */
+}
+.blogue article:hover {
+  transform: translateY(-5px);
+}
+.blogue article .toggle {
+  display: none;
+}
+.blogue article label {
+  display: block;
+  cursor: pointer; /* Le label est cliquable */
+}
+.blogue article h4, .blogue article h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #DFAE9C;
+}
+.blogue article p {
+  font-size: 1em;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+}
+.blogue article .content {
+  display: none; /* Cache le contenu par défaut */
+  margin-top: 1.5em; /* Plus d'espace avant le contenu caché */
+}
+.blogue article .toggle:checked + label + .content {
+  display: block; /* Affiche le contenu quand la case est cochée */
+}
+.blogue article .etiquette {
+  margin-top: 1.5em;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #E6C79C;
+}
+
 /*# sourceMappingURL=style.css.map */
