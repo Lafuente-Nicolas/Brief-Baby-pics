@@ -3,8 +3,8 @@
 
 .blogue {
     padding: 4vh 5vw;
-    background-color: $background-color; // Fond principal crème
-    color: $text-color; // Texte en gris anthracite
+    background-color: $background-color; 
+    color: $text-color; 
   
     h2 {
       @include title(2.5em, 600, $primary-color);
