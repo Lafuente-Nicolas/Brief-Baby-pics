@@ -33,9 +33,53 @@ Créer un site vitrine complet, élégant et responsive permettant à la cliente
 | Texte principal              | Gris anthracite| `#4A4A4A`     |
 | Accents, icônes, hover       | Doré doux      | `#E6C79C`     |
 
-> 🎯 Règles :  
-> - Maximum 2 couleurs fortes par page  
-> - Texte principal toujours en gris anthracite  
-> - Pas de texte clair sur fond clair ou foncé sur foncé  
-> - Doré uniquement pour les détails décoratifs
+ 🎯 Règles :  
+ - Maximum 2 couleurs fortes par page  
+ - Texte principal toujours en gris anthracite  
+ - Pas de texte clair sur fond clair ou foncé sur foncé  
+ - Doré uniquement pour les détails décoratifs
 
+
+### Polices sélectionnées
+
+- **Titres principaux** : [Quicksand](https://fonts.google.com/specimen/Quicksand) (Google Fonts)  
+- **Sous-titres / Accents** : [Sacramento](https://fonts.google.com/specimen/Sacramento) (optionnelle)  
+- **Texte courant** : [Nunito](https://fonts.google.com/specimen/Nunito) ou [Lato](https://fonts.google.com/specimen/Lato)
+
+## 🗂️ Structure des pages
+
+1. `index.html` — Accueil  
+2. `studio.html` — Le Studio  
+3. `galerie.html` — Galerie  
+4. `tarifs.html` — Tarifs  
+5. `blog.html` — Blog  
+6. `apropos.html` — À propos  
+7. `contact.html` — Contact
+
+## 📐 Maquettes
+
+Les wireframes ont été réalisés pour 3 formats :
+- **Mobile**
+- **Tablette**
+- **Desktop**
+
+## ✅ Contraintes respectées
+
+- ✅ HTML sémantique (aucune div inutile)
+- ✅ CSS unique
+- ✅ Utilisation de **CSS Grid** pour la galerie et **Flexbox** pour la mise en page
+- ✅ Charte graphique personnalisée
+- ✅ Favicon ajouté
+- ✅ Code validé sans erreurs via [W3C Validator](https://validator.w3.org/)
+- ✅ Versioning complet et clair avec Git
+- ✅ Site publié sur GitHub Pages
+
+## 🔗 Liens
+
+- 🔗 [Page d’accueil sur GitHub Pages](https://votre-nom.github.io/nom-du-projet)
+- 💾 [Dépôt GitHub](https://github.com/votre-nom/nom-du-projet)
+
+## 👤 Auteur
+
+Projet réalisé par **Nicolas Lafuente**  
+📅 Date de livraison : **15 avril 2025**
