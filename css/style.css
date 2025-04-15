@@ -227,6 +227,69 @@ ul {
   grid-column: span 2; /* Cette image prendra 2 colonnes */
 }
 
+.a-propos {
+  padding: 5vh 5vw;
+  background-color: #FFF8F1;
+  color: #4A4A4A;
+}
+.a-propos__header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.a-propos__header h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #DFAE9C;
+  line-height: 1.2;
+}
+.a-propos__conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3em;
+}
+.a-propos__photo {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+.a-propos__photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.a-propos__photo figcaption {
+  margin-top: 1em;
+  font-size: 0.95em;
+  font-style: italic;
+  color: #DFAE9C;
+}
+.a-propos__texte {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.a-propos__texte .a-propos__bloc {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .a-propos__conteneur {
+    flex-direction: column;
+  }
+  .a-propos__photo, .a-propos__texte {
+    max-width: 100%;
+  }
+}
+
 h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 2.25em;
