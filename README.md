@@ -53,7 +53,7 @@ Créer un site vitrine complet, élégant et responsive permettant à la cliente
 3. `galerie.html` — Galerie  
 4. `tarifs.html` — Tarifs  
 5. `blog.html` — Blog  
-6. `apropos.html` — À propos  
+6. `à-propos.html` — À propos  
 7. `contact.html` — Contact
 
 ## 📐 Wireframe
@@ -81,4 +81,4 @@ Un wireframe a été réalisé pour la version **desktop** uniquement.
 ## 👤 Auteur
 
 Projet réalisé par **Nicolas Lafuente**  
-📅 Date de livraison : **15 avril 2025**
+📅 Date de livraison : **18 avril 2025**
