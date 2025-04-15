@@ -56,12 +56,12 @@ Créer un site vitrine complet, élégant et responsive permettant à la cliente
 6. `apropos.html` — À propos  
 7. `contact.html` — Contact
 
-## 📐 Maquettes
+## 📐 Wireframe
 
-Les wireframes ont été réalisés pour 3 formats :
-- **Mobile**
-- **Tablette**
-- **Desktop**
+Un wireframe a été réalisé pour la version **desktop** uniquement.
+
+🔗 [Voir le wireframe desktop](https://www.figma.com/design/NOt87u5egV9B6SBf0S7P9K/Untitled?node-id=7-134&t=8gJhKRkap1J3XRaw-1)  
+(hébergé sur Figma)
 
 ## ✅ Contraintes respectées
 
@@ -76,8 +76,7 @@ Les wireframes ont été réalisés pour 3 formats :
 
 ## 🔗 Liens
 
-- 🔗 [Page d’accueil sur GitHub Pages](https://votre-nom.github.io/nom-du-projet)
-- 💾 [Dépôt GitHub](https://github.com/votre-nom/nom-du-projet)
+- 💾 [Dépôt GitHub](https://github.com/Lafuente-Nicolas/Brief-Baby-pics)
 
 ## 👤 Auteur
 
