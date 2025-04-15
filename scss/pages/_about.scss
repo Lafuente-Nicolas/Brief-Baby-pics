@@ -1,0 +1,74 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.a-propos {
+    padding: 5vh 5vw; // Marge intérieure de la section
+    background-color: $background-color; // Fond principal crème
+    color: $text-color; // Texte anthracite
+  
+    &__header {
+      text-align: center;
+      margin-bottom: 3em;
+  
+      h2 {
+        @include title(2.5em, 600, $primary-color); // Titre en rose poudré
+      }
+    }
+  
+    &__conteneur {
+      display: flex;
+      flex-wrap: wrap; // Permet de passer en colonne sur petits écrans
+      align-items: center;
+      gap: 3em; // Espace entre l’image et le texte
+    }
+  
+    &__photo {
+      flex: 1 1 300px; // L’image prend de l’espace mais peut s’adapter
+      max-width: 400px;
+      text-align: center;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); // Légère ombre douce
+      }
+  
+      figcaption {
+        margin-top: 1em;
+        font-size: 0.95em;
+        font-style: italic;
+        color: $primary-color;
+      }
+    }
+  
+    &__texte {
+      flex: 2 1 500px; // Le texte prend plus de place que l’image
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+  
+      .a-propos__bloc {
+        background-color: #fff; // Fond blanc pour détacher les blocs
+        padding: 1.5em;
+        border-radius: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); // Petite ombre
+        font-family: $font-body;
+        font-size: 1.05em;
+        line-height: 1.6;
+      }
+    }
+  
+    // Responsive : pour les écrans étroits (< 768px)
+    @media screen and (max-width: 768px) {
+      &__conteneur {
+        flex-direction: column; // Empile les blocs verticalement
+      }
+  
+      &__photo,
+      &__texte {
+        max-width: 100%;
+      }
+    }
+  }
+  
