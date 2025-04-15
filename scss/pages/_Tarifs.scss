@@ -9,11 +9,13 @@
   
   
     h2 {
-      @include title(2.25rem, 600, $secondary-color);
+      @include title(2.25rem, 600, $primary-color);
       margin-bottom: 1.5rem;
     }
   
-   
+   p{ 
+    @include body-text(1.125rem, 400, $text-color);
+   }
     .intro,
     .conclusion {
       @include body-text(1.125rem, 400, $text-color);
