@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as *;
 // Titre principal (h1, h2, etc.)
-@mixin title($size: 2.25em, $weight: 600, $color: #F4C6C8) {
+@mixin title($size: 2.25em, $weight: 600, $color: #DFAE9C) {
   font-family: $font-title;
   font-size: $size;
   font-weight: $weight;
@@ -24,6 +24,21 @@
   font-weight: $weight; 
   color: $color; 
   line-height: 1.6; 
+}
+
+
+// _mixins.scss
+
+@mixin tablette {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
 }
 
 
