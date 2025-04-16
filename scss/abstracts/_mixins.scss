@@ -27,19 +27,5 @@
 }
 
 
-// _mixins.scss
-
-@mixin tablette {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: 768px) {
-    @content;
-  }
-}
-
 
 
