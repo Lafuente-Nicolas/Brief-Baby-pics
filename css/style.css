@@ -206,7 +206,7 @@ ul {
   transform: scaleX(1);
 }
 .main-nav a:hover {
-  color: #F4C6C8;
+  color: #DFAE9C;
 }
 
 .gallery {
@@ -345,7 +345,7 @@ ul {
   font-family: "Nunito", sans-serif;
   font-size: 1em;
   padding: 0.75em;
-  border: 1px solid #b0b0b0;
+  border: 1px solid #4A4A4A, 40%;
   border-radius: 8px;
   background-color: white;
 }
