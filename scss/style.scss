@@ -1,0 +1,33 @@
+
+@use './abstracts/functions';
+@use './abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+
+
+
+@use './base/reset';
+@use './base/typography';
+
+@use './components/button';
+@use './components/card';
+@use './components/navbar';
+@use './components/container';
+
+@use './layout/footer';
+@use './layout/grid';
+@use './layout/header';  
+@use './layout/sidebar';
+@use './layout/gallery';
+
+@use './pages/about';
+@use './pages/contact';
+@use './pages/home';
+@use './pages/studio';
+@use './pages/Tarifs';
+@use './pages/galerie';
+@use './pages/blog';
+
+@use './themes/dark';
+@use 'themes/light';
+
+

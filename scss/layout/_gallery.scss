@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+
+.gallery {
+  background-color: $background-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  justify-items: center; /* Centre les images horizontalement */
+  align-items: center; /* Centre les images verticalement */
+  
+  img {
+    width: 100%; /* Les images prennent toute la largeur de la cellule */
+    height: 100%;
+    border-radius: 8px; /* Coins arrondis */
+  }
+
+  /* Image prenant 2 colonnes */
+  .image-large {
+    grid-column: span 2; /* Cette image prendra 2 colonnes */
+  }
+  background-color: $background-color;
+}

@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as *;
+
+footer{
+  background-color: $secondary-color;
+  padding: 3em 1.5em;
+
+  
+  h3 {
+    font-family: $font-title;
+    font-size: 1.5rem;
+    color: $primary-color;
+  }
+
+  
+  p, address {
+    font-family: $font-body;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  // Ne pas surligner le texte des paragraphes au survol
+  p:hover, address:hover {
+    color: $text-color; 
+  }
+
+ 
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+
+      // Style des liens sociaux
+      a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: inline-flex;
+        align-items: flex-start;
+        transition: color 0.3s ease;
+
+        i {
+          margin-right: 0.5rem;
+          font-size: 1.8rem; // Ajuste la taille des icônes
+        }
+
+        // Effet de survol uniquement pour les liens sociaux
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  // Appliquer le survol pour les liens mail et téléphone
+  address a {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    // Effet de survol pour les liens de contact
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  
+  p {
+    font-size: 0.9rem;
+    color: $text-color;
+  }
+}
+ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;            
+    margin: 0;             
+  }
+
+  .center-container {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+  
+  }
+  
+  .center-container p {
+    text-align: center; /* Assure que le texte est centré si la largeur du conteneur est plus grande que le texte */
+  }
+  
