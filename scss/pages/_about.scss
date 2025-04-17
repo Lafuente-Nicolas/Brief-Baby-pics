@@ -1,0 +1,79 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.a-propos__conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; // Espace entre les blocs
+    padding: 4rem 2rem;
+    background-color: #FFF8F1; // Blanc crème
+    color: #4A4A4A; // Texte anthracite
+  
+    h2 {
+      width: 100%;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #DFAE9C;
+    }
+  }
+  
+  .a-propos__bloc {
+    flex: 1 1 400px; // Minimum 400px, s’adapte selon l’espace
+    max-width: 600px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    h3 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #DFAE9C;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+  
+  // Bloc avec l’image de la photographe
+  .a-propos__bloc--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 2rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  // Accessibilité : cache les titres uniquement visuellement
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
